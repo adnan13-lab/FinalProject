@@ -1,0 +1,59 @@
+is_global = true
+build_property.TargetFramework = net8.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = BankingControlPanel
+build_property.RootNamespace = BankingControlPanel
+build_property.ProjectDir = D:\internship\projects\Week-6\BankingControlPanel\BankingControlPanel\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+build_property.RazorLangVersion = 8.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = D:\internship\projects\Week-6\BankingControlPanel\BankingControlPanel
+build_property._RazorSourceGeneratorDebug = 
+
+[D:/internship/projects/Week-6/BankingControlPanel/BankingControlPanel/Views/AdminDashBoard/AdminDashboard.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5EYXNoQm9hcmRcQWRtaW5EYXNoYm9hcmQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/internship/projects/Week-6/BankingControlPanel/BankingControlPanel/Views/AdminProfile/Adminprofile.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5Qcm9maWxlXEFkbWlucHJvZmlsZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/internship/projects/Week-6/BankingControlPanel/BankingControlPanel/Views/ErrorDialogBox/ErrorDialog.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXJyb3JEaWFsb2dCb3hcRXJyb3JEaWFsb2cuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/internship/projects/Week-6/BankingControlPanel/BankingControlPanel/Views/Login/LogIn.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9naW5cTG9nSW4uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/internship/projects/Week-6/BankingControlPanel/BankingControlPanel/Views/Registration/Registrations.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVnaXN0cmF0aW9uXFJlZ2lzdHJhdGlvbnMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/internship/projects/Week-6/BankingControlPanel/BankingControlPanel/Views/UpdateClient/Updateclient.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXBkYXRlQ2xpZW50XFVwZGF0ZWNsaWVudC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/internship/projects/Week-6/BankingControlPanel/BankingControlPanel/Views/UserDashBoard/UserDashboard.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlckRhc2hCb2FyZFxVc2VyRGFzaGJvYXJkLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/internship/projects/Week-6/BankingControlPanel/BankingControlPanel/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/internship/projects/Week-6/BankingControlPanel/BankingControlPanel/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/internship/projects/Week-6/BankingControlPanel/BankingControlPanel/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-9kf46ph3ik

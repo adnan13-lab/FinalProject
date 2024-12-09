@@ -1,0 +1,112 @@
+﻿@using BankingControlPanel.Models
+<div class="container mt-5">
+    @if (ViewData["Error"] != null)
+    {
+        <div class="alert alert-danger alert-dismissible fade show" role="alert">
+            <strong>Error: </strong>@ViewData["Error"]
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        </div>
+    }
+
+    <h2 class="text-center">User Dashboard</h2>
+
+    <div class="text-center my-4">
+        <h4>Welcome, @ViewData["FirstName"] @ViewData["LastName"]!</h4>
+        <p>View and manage your profile information.</p>
+    </div>
+
+    <div class="card mb-4">
+        <div class="card-header bg-primary text-white">
+            <strong>Profile Information</strong>
+        </div>
+        <div class="card-body">
+            <table class="table table-bordered">
+                <tr>
+                    <td><strong>Profile Photo:</strong></td>
+                    <td>
+                        <img src="@ViewData["ProfilePath"]" alt="Profile Photo" class="img-thumbnail" style="width: 150px; height: 150px;">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td><strong>Email:</strong></td>
+                    <td>@ViewData["Email"]</td>
+                </tr>
+                <tr>
+                    <td><strong>First Name:</strong></td>
+                    <td>@ViewData["FirstName"]</td>
+                </tr>
+                <tr>
+                    <td><strong>Last Name:</strong></td>
+                    <td>@ViewData["LastName"]</td>
+                </tr>
+                <tr>
+                    <td><strong>Phone:</strong></td>
+                    <td>@ViewData["Mobile"]</td>
+                </tr>
+                <tr>
+                    <td><strong>Country:</strong></td>
+                    <td>@ViewData["Country"]</td>
+                </tr>
+                <tr>
+                    <td><strong>City:</strong></td>
+                    <td>@ViewData["City"]</td>
+                </tr>
+                <tr>
+                    <td><strong>Street:</strong></td>
+                    <td>@ViewData["Street"]</td>
+                </tr>
+                <tr>
+                    <td><strong>ZipCode:</strong></td>
+                    <td>@ViewData["ZipCode"]</td>
+                </tr>
+                <tr>
+                    <td><strong>Sex:</strong></td>
+                    <td>@ViewData["Sex"]</td>
+                </tr>
+                
+            </table>
+            <div>
+                <button class="btn btn-warning btn-sm" onclick="Update()">Edit Profile</button>
+                <button class="btn btn-danger btn-sm " onclick="Goto()">Logout</button>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Account Details Section -->
+    <div class="card mb-4">
+        <div class="card-header bg-secondary text-white">
+            <strong>Your Accounts</strong>
+        </div>
+        <div class="card-body">
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th>Account Id</th>
+                        <th>Email</th>
+                        <th>Password</th>
+                        <th>Role</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>@ViewData["AccountId"]</td>
+                        <td>@ViewData["AccountEmail"]</td>
+                        <td>@ViewData["AccountPassword"]</td>
+                        <td>@ViewData["AccountRole"]</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+<script>
+    function Goto() {
+        localStorage.removeItem("jwtToken");
+        window.location.href = "/Login/LogIn";
+    }
+    function Update() {
+        window.location.href = "/UpdateClient/Updateclient";
+    }
+</script>

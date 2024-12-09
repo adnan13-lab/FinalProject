@@ -1,0 +1,174 @@
+﻿@using BankingControlPanel.Models
+@model BankingControlPanel.Models.Pagination
+
+<div class="container">
+    @if (ViewData["Error"] != null)
+    {
+        <div class="alert alert-danger alert-dismissible fade show" role="alert">
+            <strong>Error: </strong>@ViewData["Error"]
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        </div>
+    }
+    <div class="row justify-content-between align-items-center">
+        <div class="col-auto">
+            <h2>Admin Dashboard</h2>
+        </div>
+    </div>
+
+    <div class="row mb-3 d-flex justify-content-between align-items-center">
+        <form class="d-flex w-50 position-relative" asp-controller="AdminDashBoard" asp-action="FilterClients" method="get">
+            <input class="form-control me-2" type="search" name="name" placeholder="Search" aria-label="Search" id="searchInput" onclick="toggleSearchHistory()">
+
+            <ul id="searchHistory" class="search-history-list" style="display:none;">
+                @if (ViewData["SearchHistory"] != null)
+                {
+                    var search = ViewData["SearchHistory"] as List<Searchs>;
+                    if (search != null && search.Any() && search.Count > 0)
+                    {
+                        foreach (var item in search)
+                        {
+                            <li onclick="selectSearchItem('@item.Name')">@item.Name</li>
+                        }
+                    }
+                    else
+                    {
+                        <li>Search History Is Empty</li>
+                    }
+                }
+                else
+                {
+                    <li>Search History Is Empty</li>
+                }
+            </ul>
+
+            <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+
+        <div class="col-auto ml-auto d-flex align-items-center">
+            <button onclick="Profile()" class="btn">Profile</button>
+            <button onclick="logout()" class="btn btn-danger">Logout</button>
+            <div class="dropdown ms-2">
+                <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Sort
+                </button>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href= "@Url.Action("AdminDashboard", new { pageNum = Model.CurrentPage, pageSize = Model.PageSize , sort = "asc"})">Ascending Order</a></li>
+                    <li><a class="dropdown-item" href="@Url.Action("AdminDashboard", new { pageNum = Model.CurrentPage, pageSize = Model.PageSize , sort = "desc"})">Descending Order</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <hr />
+
+    <div class="table-responsive">
+        @if (Model.Clients != null && Model.Clients.Count > 0)
+        {
+            <table class="table table-bordered">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>First Name</th>
+                        <th>Last Name</th>
+                        <th>Mobile</th>
+                        <th>Country</th>
+                        <th>City</th>
+                        <th>Street</th>
+                        <th>ZipCode</th>
+                        <th>Accounts</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var item in Model.Clients)
+                    {
+                        <tr>
+                            <td>@item.ClientId</td>
+                            <td>@item.FirstName</td>
+                            <td>@item.LastName</td>
+                            <td>@item.Mobile</td>
+                            <td>@item!.address!.Country</td>
+                            <td>@item.address.City</td>
+                            <td>@item.address.Street</td>
+                            <td>@item.address.ZipCode</td>
+                            <td>
+                                <table class="table table-sm">
+                                    <thead>
+                                        <tr>
+                                            <th>Email</th>
+                                            <th>Password</th>
+                                            <th>Role</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        @foreach (var account in item.account!)
+                                        {
+                                            <tr>
+                                                <td>@account.Email</td>
+                                                <td>@account.Password</td>
+                                                <td>@account.Role</td>
+                                            </tr>
+                                        }
+                                    </tbody>
+                                </table>
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        }
+        else
+        {
+            <h1>Users Not Found</h1>
+        }
+    </div>
+
+    <div class="row">
+        <div class="col">
+            <div class="pagination">
+            @for (var i = 1; i <= Model.TotalPages; i++)
+            {
+                <a href="@Url.Action("AdminDashboard", new { pageNum = i, pageSize = Model.PageSize })" class="page-link @((i == Model.CurrentPage) ? "active" : "")">@i</a>
+            }
+            </div>
+        </div>
+        
+        <div class="col-auto ml-auto">
+            <a asp-controller="Registration" asp-action="Registrations" asp-route-AddByAdmin=true class="btn btn-primary">Register</a>
+        </div>
+    </div>
+</div>
+
+<script>
+    function logout() {
+        localStorage.removeItem("jwtToken");
+        window.location.href = "/Login/LogIn";
+        }
+
+        function Profile() {
+            window.location.href = "/AdminProfile/Adminprofile";
+        }
+
+    function toggleSearchHistory() {
+        const searchHistory = document.getElementById("searchHistory");
+        if (searchHistory.style.display === "none" || searchHistory.style.display === "") {
+            searchHistory.style.display = "block";
+        } else {
+            searchHistory.style.display = "none";
+        }
+    }
+
+    function selectSearchItem(name) {
+        const searchInput = document.getElementById("searchInput");
+        searchInput.value = name; 
+        document.getElementById("searchHistory").style.display = "none"; 
+    }
+
+    document.addEventListener('click', function(event) {
+        var searchInput = document.getElementById("searchInput");
+        var searchHistory = document.getElementById("searchHistory");
+        if (!searchInput.contains(event.target) && !searchHistory.contains(event.target)) {
+            searchHistory.style.display = "none";
+        }
+    });
+
+</script>

@@ -1,0 +1,60 @@
+﻿@model BankingControlPanel.Models.Account
+
+<div class="container-fluid mt-5" id="con">
+    <div class="card" id="Lcard">
+        <div class="card-body">
+            <h2 class="text-start mb-4">Client Login</h2>
+
+            @if (ViewData["ErrorMessage"] != null)
+            {
+                <div class="alert alert-danger alert-dismissible fade show" role="alert">
+                    <strong>Error: </strong>@ViewData["ErrorMessage"]
+                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                </div>
+            }
+            @if (ViewData["Error"] != null)
+            {
+                <div class="alert alert-danger alert-dismissible fade show" role="alert">
+                    <strong>Error: </strong>@ViewData["Error"]
+                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                </div>
+            }
+            @if (TempData["AddMessage"] != null)
+            {
+                <div class="alert alert-success alert-dismissible fade show" role="alert">
+                    <strong>Message: </strong>@TempData["AddMessage"]
+                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                </div>
+            }
+
+            <form asp-action="Login" method="post">
+                <div class="mb-3">
+                    <label for="Email" class="form-label">Email</label>
+                    <input asp-for="Email" type="email" class="form-control" id="Email" name="Email"/>
+                    <span asp-validation-for="Email" class="text-danger"></span>
+                </div>
+
+                <div class="mb-3">
+                    <label for="Password" class="form-label">Password</label>
+                    <input asp-for="Password" type="password" class="form-control" id="Password" name="Password"/>
+                    <span asp-validation-for="Password" class="text-danger"></span>
+                </div>
+
+                <div class="mb-3">
+                    <label for="Role" class="form-label">Role</label>
+                    <select class="form-select" id="Role" name="Role" required>
+                        <option value="User">User</option>
+                        <option value="Admin">Admin</option>
+                    </select>
+                </div>
+
+                <button type="submit" class="custom-btn">Login</button>
+            </form>
+
+            <div class="mt-4 text-center">
+                <p>If you don't have an account? <a asp-controller="Registration" asp-action="Registrations" asp-route-AddByAdmin=false>Register</a></p>
+                @* /Registration/Registrations?AddByAdmin=false *@
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,64 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\internship\\projects\\Week-6\\BankingControlPanel\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{46417C08-5257-471D-A440-5B0B1404D293}|BankingControlPanel\\BankingControlPanel.csproj|d:\\internship\\projects\\week-6\\bankingcontrolpanel\\bankingcontrolpanel\\views\\admindashboard\\admindashboard.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{46417C08-5257-471D-A440-5B0B1404D293}|BankingControlPanel\\BankingControlPanel.csproj|solutionrelative:bankingcontrolpanel\\views\\admindashboard\\admindashboard.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{46417C08-5257-471D-A440-5B0B1404D293}|BankingControlPanel\\BankingControlPanel.csproj|d:\\internship\\projects\\week-6\\bankingcontrolpanel\\bankingcontrolpanel\\controllers\\admindashboardcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{46417C08-5257-471D-A440-5B0B1404D293}|BankingControlPanel\\BankingControlPanel.csproj|solutionrelative:bankingcontrolpanel\\controllers\\admindashboardcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 1,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedHeight": 373,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "AdminDashBoardController.cs",
+              "DocumentMoniker": "D:\\internship\\projects\\Week-6\\BankingControlPanel\\BankingControlPanel\\Controllers\\AdminDashBoardController.cs",
+              "RelativeDocumentMoniker": "BankingControlPanel\\Controllers\\AdminDashBoardController.cs",
+              "ToolTip": "D:\\internship\\projects\\Week-6\\BankingControlPanel\\BankingControlPanel\\Controllers\\AdminDashBoardController.cs",
+              "RelativeToolTip": "BankingControlPanel\\Controllers\\AdminDashBoardController.cs",
+              "ViewState": "AgIAAHwAAAAAAAAAAAAgwGkAAAAzAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-06T16:39:34.915Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "AdminDashboard.cshtml",
+              "DocumentMoniker": "D:\\internship\\projects\\Week-6\\BankingControlPanel\\BankingControlPanel\\Views\\AdminDashBoard\\AdminDashboard.cshtml",
+              "RelativeDocumentMoniker": "BankingControlPanel\\Views\\AdminDashBoard\\AdminDashboard.cshtml",
+              "ToolTip": "D:\\internship\\projects\\Week-6\\BankingControlPanel\\BankingControlPanel\\Views\\AdminDashBoard\\AdminDashboard.cshtml",
+              "RelativeToolTip": "BankingControlPanel\\Views\\AdminDashBoard\\AdminDashboard.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEEAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-08T12:47:42.017Z",
+              "EditorCaption": ""
+            }
+          ]
+        },
+        {
+          "DockedHeight": 43,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

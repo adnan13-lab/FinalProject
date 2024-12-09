@@ -1,0 +1,14 @@
+D:\internship\projects\Week-6\BankingControlPanel.Api\BankingControlPanel.Api.Models\bin\Debug\net8.0\BankingControlPanel.Api.Models.deps.json
+D:\internship\projects\Week-6\BankingControlPanel.Api\BankingControlPanel.Api.Models\bin\Debug\net8.0\BankingControlPanel.Api.Models.runtimeconfig.json
+D:\internship\projects\Week-6\BankingControlPanel.Api\BankingControlPanel.Api.Models\bin\Debug\net8.0\BankingControlPanel.Api.Models.dll
+D:\internship\projects\Week-6\BankingControlPanel.Api\BankingControlPanel.Api.Models\bin\Debug\net8.0\BankingControlPanel.Api.Models.pdb
+D:\internship\projects\Week-6\BankingControlPanel.Api\BankingControlPanel.Api.Models\obj\Debug\net8.0\BankingControlPanel.Api.Models.csproj.AssemblyReference.cache
+D:\internship\projects\Week-6\BankingControlPanel.Api\BankingControlPanel.Api.Models\obj\Debug\net8.0\BankingControlPanel.Api.Models.GeneratedMSBuildEditorConfig.editorconfig
+D:\internship\projects\Week-6\BankingControlPanel.Api\BankingControlPanel.Api.Models\obj\Debug\net8.0\BankingControlPanel.Api.Models.AssemblyInfoInputs.cache
+D:\internship\projects\Week-6\BankingControlPanel.Api\BankingControlPanel.Api.Models\obj\Debug\net8.0\BankingControlPanel.Api.Models.AssemblyInfo.cs
+D:\internship\projects\Week-6\BankingControlPanel.Api\BankingControlPanel.Api.Models\obj\Debug\net8.0\BankingControlPanel.Api.Models.csproj.CoreCompileInputs.cache
+D:\internship\projects\Week-6\BankingControlPanel.Api\BankingControlPanel.Api.Models\obj\Debug\net8.0\BankingControlPanel.Api.Models.dll
+D:\internship\projects\Week-6\BankingControlPanel.Api\BankingControlPanel.Api.Models\obj\Debug\net8.0\refint\BankingControlPanel.Api.Models.dll
+D:\internship\projects\Week-6\BankingControlPanel.Api\BankingControlPanel.Api.Models\obj\Debug\net8.0\BankingControlPanel.Api.Models.pdb
+D:\internship\projects\Week-6\BankingControlPanel.Api\BankingControlPanel.Api.Models\obj\Debug\net8.0\BankingControlPanel.Api.Models.genruntimeconfig.cache
+D:\internship\projects\Week-6\BankingControlPanel.Api\BankingControlPanel.Api.Models\obj\Debug\net8.0\ref\BankingControlPanel.Api.Models.dll

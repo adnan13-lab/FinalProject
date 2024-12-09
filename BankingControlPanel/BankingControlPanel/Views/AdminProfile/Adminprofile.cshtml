@@ -1,0 +1,125 @@
+﻿@using BankingControlPanel.Models
+
+<div class="container mt-5">
+
+
+    <h2 class="text-center">Admin Profile</h2>
+
+    <!-- Profile Header -->
+    <div class="text-center my-4">
+        <h4>Welcome, @ViewData["FirstName"] @ViewData["LastName"]!</h4>
+        <p>View and manage your profile information.</p>
+        <h1>@ViewData["id"]</h1>
+    </div>
+    @if (TempData["UpdateMessage"] != null)
+    {
+        <div class="alert alert-success alert-dismissible fade show" role="alert">
+            <strong>Message: </strong>@TempData["UpdateMessage"]
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        </div>
+    }
+    @if (TempData["Error"] != null)
+    {
+        <div class="alert alert-success alert-dismissible fade show" role="alert">
+            <strong>Message: </strong>@TempData["Error"]
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        </div>
+    }
+    <!-- Profile Information Section -->
+    <div class="card mb-4">
+       
+        <div class="card-header bg-primary text-white">
+            <strong>Profile Information</strong>
+        </div>
+        <div class="card-body">
+            <table class="table table-bordered">
+                <tr>
+                    <td><strong>ClientId:</strong></td>
+                    <td>@ViewData["ClientId"]</td>
+                </tr>
+                <tr>
+                    <td><strong>Profile Photo:</strong></td>
+                    <td>
+                        <img src="@ViewData["ProfilePath"]" alt="Profile Photo" class="img-thumbnail" style="width: 150px; height: 150px;">
+                    </td>
+                </tr>
+                <tr>
+                    <td><strong>First Name:</strong></td>
+                    <td>@ViewData["FirstName"]</td>
+                </tr>
+                <tr>
+                    <td><strong>Last Name:</strong></td>
+                    <td>@ViewData["LastName"]</td>
+                </tr>
+                <tr>
+                    <td><strong>Phone:</strong></td>
+                    <td>@ViewData["Mobile"]</td>
+                </tr>
+                <tr>
+                    <td><strong>Country:</strong></td>
+                    <td>@ViewData["Country"]</td>
+                </tr>
+                <tr>
+                    <td><strong>City:</strong></td>
+                    <td>@ViewData["City"]</td>
+                </tr>
+                <tr>
+                    <td><strong>Street:</strong></td>
+                    <td>@ViewData["Street"]</td>
+                </tr>
+                <tr>
+                    <td><strong>ZipCode:</strong></td>
+                    <td>@ViewData["ZipCode"]</td>
+                </tr>
+                <tr>
+                    <td><strong>Sex:</strong></td>
+                    <td>@ViewData["Sex"]</td>
+                </tr>
+                
+            </table>
+            <div>
+                <button class="btn btn-warning btn-sm" onclick="Update()">Edit Profile</button>
+                <button class="btn btn-dark btn-sm" onclick="Goto()">Back</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Account Details Section -->
+    <div class="card mb-4">
+        <div class="card-header bg-secondary text-white">
+            <strong>Your Accounts</strong>
+        </div>
+        <div class="card-body">
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th>AccountId</th>
+                        <th>Email</th>
+                        <th>Password</th>
+                        <th>Role</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var items in ViewBag.Accounts)
+                    {
+                        <tr>
+                            <th>@items.AccountId</th>
+                            <th>@items.Email</th>
+                            <th>@items.Password</th>
+                            <th>@items.Role</th>
+                        </tr>
+                    }
+                    
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+<script>
+    function Update() {
+        window.location.href = "/UpdateClient/Updateclient";
+    }
+    function Goto() {
+       window.location.href = "/AdminDashBoard/AdminDashboard";
+    }
+</script>

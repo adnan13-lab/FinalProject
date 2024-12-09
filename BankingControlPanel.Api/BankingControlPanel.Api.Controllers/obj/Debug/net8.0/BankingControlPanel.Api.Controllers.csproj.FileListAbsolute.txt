@@ -1,0 +1,17 @@
+D:\internship\projects\Week-6\BankingControlPanel.Api\BankingControlPanel.Api.Controllers\obj\Debug\net8.0\BankingControlPanel.Api.Controllers.csproj.AssemblyReference.cache
+D:\internship\projects\Week-6\BankingControlPanel.Api\BankingControlPanel.Api.Controllers\obj\Debug\net8.0\BankingControlPanel.Api.Controllers.GeneratedMSBuildEditorConfig.editorconfig
+D:\internship\projects\Week-6\BankingControlPanel.Api\BankingControlPanel.Api.Controllers\obj\Debug\net8.0\BankingControlPanel.Api.Controllers.AssemblyInfoInputs.cache
+D:\internship\projects\Week-6\BankingControlPanel.Api\BankingControlPanel.Api.Controllers\obj\Debug\net8.0\BankingControlPanel.Api.Controllers.AssemblyInfo.cs
+D:\internship\projects\Week-6\BankingControlPanel.Api\BankingControlPanel.Api.Controllers\obj\Debug\net8.0\BankingControlPanel.Api.Controllers.csproj.CoreCompileInputs.cache
+D:\internship\projects\Week-6\BankingControlPanel.Api\BankingControlPanel.Api.Controllers\bin\Debug\net8.0\BankingControlPanel.Api.Controllers.deps.json
+D:\internship\projects\Week-6\BankingControlPanel.Api\BankingControlPanel.Api.Controllers\bin\Debug\net8.0\BankingControlPanel.Api.Controllers.runtimeconfig.json
+D:\internship\projects\Week-6\BankingControlPanel.Api\BankingControlPanel.Api.Controllers\bin\Debug\net8.0\BankingControlPanel.Api.Controllers.dll
+D:\internship\projects\Week-6\BankingControlPanel.Api\BankingControlPanel.Api.Controllers\bin\Debug\net8.0\BankingControlPanel.Api.Controllers.pdb
+D:\internship\projects\Week-6\BankingControlPanel.Api\BankingControlPanel.Api.Controllers\bin\Debug\net8.0\BankingControlPanel.Api.Models.dll
+D:\internship\projects\Week-6\BankingControlPanel.Api\BankingControlPanel.Api.Controllers\bin\Debug\net8.0\BankingControlPanel.Api.Models.pdb
+D:\internship\projects\Week-6\BankingControlPanel.Api\BankingControlPanel.Api.Controllers\obj\Debug\net8.0\BankingC.4B3CA93D.Up2Date
+D:\internship\projects\Week-6\BankingControlPanel.Api\BankingControlPanel.Api.Controllers\obj\Debug\net8.0\BankingControlPanel.Api.Controllers.dll
+D:\internship\projects\Week-6\BankingControlPanel.Api\BankingControlPanel.Api.Controllers\obj\Debug\net8.0\refint\BankingControlPanel.Api.Controllers.dll
+D:\internship\projects\Week-6\BankingControlPanel.Api\BankingControlPanel.Api.Controllers\obj\Debug\net8.0\BankingControlPanel.Api.Controllers.pdb
+D:\internship\projects\Week-6\BankingControlPanel.Api\BankingControlPanel.Api.Controllers\obj\Debug\net8.0\BankingControlPanel.Api.Controllers.genruntimeconfig.cache
+D:\internship\projects\Week-6\BankingControlPanel.Api\BankingControlPanel.Api.Controllers\obj\Debug\net8.0\ref\BankingControlPanel.Api.Controllers.dll

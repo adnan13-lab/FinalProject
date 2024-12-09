@@ -1,0 +1,115 @@
+﻿@model BankingControlPanel.Models.Registration
+
+
+<div class="container-fuild mt-5">
+    @if (ViewData["Error"] != null)
+    {
+        <div class="alert alert-danger alert-dismissible fade show" role="alert">
+            <strong>Error: </strong>@ViewData["Error"]
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        </div>
+    }
+    <div class="card">
+        <div class="card-body">
+            <h2 class="text-start mb-4">Client Registration</h2>
+            <form asp-controller="Registration" asp-action="Registrations" method="post" enctype="multipart/form-data">
+
+                <div class="row">
+                    <div class="col-md-6 mb-3">
+                        <label for="FirstName" class="form-label">First Name</label>
+                        <input asp-for="FirstName" type="text" class="form-control" id="FirstName" name="FirstName"/>
+                        <span asp-validation-for="FirstName" class="text-danger"></span>
+                    </div>
+                    <div class="col-md-6 mb-3">
+                        <label for="LastName" class="form-label">Last Name</label>
+                        <input asp-for="LastName" type="text" class="form-control" id="LastName" name="LastName"/>
+                        <span asp-validation-for="LastName" class="text-danger"></span>
+                    </div>
+                </div>
+
+                <div class="mb-3">
+                    <label for="email" class="form-label">email</label>
+                    <input asp-for="Email" type="email" class="form-control" id="email" name="email"/>
+                    <span asp-validation-for="Email" class="text-danger"></span>
+                </div>
+
+                <div class="mb-3">
+                    <label for="password" class="form-label">password</label>
+                    <input asp-for="Password" type="password" class="form-control" id="password" name="password"/>
+                    <span asp-validation-for="Password" class="text-danger"></span>
+                </div>
+
+                <div class="mb-3">
+                    <label for="PersonalId" class="form-label">Personal ID</label>
+                    <input asp-for="PersonalId" type="text" class="form-control" id="PersonalId" name="PersonalId"/>
+                    <span asp-validation-for="PersonalId" class="text-danger"></span>
+                </div>
+
+                <div class="mb-3">
+                    <label for="Image" class="form-label">Profile Image URL</label>
+                    <input asp-for="Image" type="file" class="form-control" id="Image" name="Image"/>
+                    <span asp-validation-for="Image" class="text-danger"></span>
+                </div>
+
+                <div class="mb-3">
+                    <label for="Mobile" class="form-label">Mobile Number</label>
+                    <input asp-for="Mobile" type="text" class="form-control" id="Mobile" name="Mobile"/>
+                    <span asp-validation-for="Mobile" class="text-danger"></span>
+                </div>
+
+                <div class="mb-3">
+                    <label for="Country" class="form-label">Country</label>
+                    <input asp-for="Country" type="text" class="form-control" id="Country" name="Country"/>
+                    <span asp-validation-for="Country" class="text-danger"></span>
+                </div> 
+
+                <div class="mb-3">
+                    <label for="City" class="form-label">City</label>
+                    <input asp-for="City" type="text" class="form-control" id="City" name="City"/>
+                    <span asp-validation-for="City" class="text-danger"></span>
+                </div>
+
+                <div class="mb-3">
+                    <label for="Street" class="form-label">Street</label>
+                    <input asp-for="Street" type="text" class="form-control" id="Street" name="Street"/>
+                    <span asp-validation-for="Street" class="text-danger"></span>
+                </div>
+
+                <div class="mb-3">
+                    <label for="ZipCode" class="form-label">Zip Code</label>
+                    <input asp-for="ZipCode" type="text" class="form-control" id="ZipCode" name="ZipCode"/>
+                    <span asp-validation-for="ZipCode" class="text-danger"></span>
+                </div>
+
+                <div class="mb-3">
+                    <label for="Sex" class="form-label">Sex</label>
+                    <select class="form-select" id="Sex" name="Sex">
+                        <option value="">Select Sex</option>
+                        <option value="Male">Male</option>
+                        <option value="Female">Female</option>
+                    </select>
+                    <span asp-validation-for="Sex" class="text-danger"></span>
+                </div>
+
+                <div class="mb-3">
+                    <label for="Role" class="form-label">Role</label>
+                    <select class="form-select" id="Role" name="Role">
+                        <option value="User">User</option>
+                        <option value="Admin">Admin</option>
+                    </select>
+                    <span asp-validation-for="Role" class="text-danger"></span>
+                </div>
+
+                <button type="submit" class="custom-btn">Register</button>
+
+            </form>
+
+            @if (ViewData["MessageByAdmin"] != null && ViewData["MessageByAdmin"]!.ToString() == "false")
+            {
+                <div class="mt-4 text-center">
+                    <p>Already have an account? <a href="/Login/LogIn">Sign in</a></p>
+                </div>
+            }
+        </div>
+    </div>
+</div>
